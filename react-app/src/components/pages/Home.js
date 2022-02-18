@@ -1,21 +1,27 @@
-import React from 'react';
 
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import logo from '../assets/IMG_0303.jpg';
+import '../../App.css';
 export default function Home() {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-     </p>
-    </div>
+<MDBContainer className="mt-5">
+      <MDBRow>
+      <MDBCol md="12">
+          <h2 className='text-center'>About Me</h2>
+          <hr className=" solid bg-dark"/>
+          <img
+            style={{ height: "285px" }}
+            src={logo}
+            class="float-left pr-4 pb-3 img-fluid"
+            alt="logo"
+          />
+          <p style={{ fontSize: "27px" }}>
+          My name is Taylor Garrey and I Graduated from The University of Arizona's full-stack coding bootcamp. Currently I am looking for a Junior Development position remotely , or in Phoenix, Arizona. I have an Understanding of Javascript, HTML, CSS, Node.js, Express.js, React.js, MongoDB, Api's, OOP, mySQL, ORM, MVC, noSQL. I have a passion for technology and cannot wait to be a full time developer!
+          </p>
+      
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   );
-}
+};

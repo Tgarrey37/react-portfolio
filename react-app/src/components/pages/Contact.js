@@ -1,22 +1,39 @@
 import React from 'react';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdbreact";
+import logo from '../assets/IMG_0101.jpeg'
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+    <MDBContainer className="mt-5">
+      <MDBRow>
+        <MDBCol md="12" className="text-center">
+          <h2>Contact Information</h2>
+          <hr class="solid bg-dark" />
+          <img
+            style={{ height: "250px" }}
+            src={logo}
+            class="pr-4 pb-3 img-fluid"
+            alt="Tayor Garrey"
+          />
+        
+        <p style={{ fontSize: "27px" }}>
+            Feel free to contact me with anything you need !
+          </p>
+          <h3>Cell Phone</h3>
+          
+          <a href="tel:480-322-2698">
+            <MDBIcon icon="phone-alt" /> 480-322-2698
+          </a>
+          
+          <h3>E-mail</h3>
+          
+          <a href="mailto:tpopp0303@gmail.com">
+            <MDBIcon icon="envelope" /> tpopp0303@gmail.com
+          </a>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   );
-}
+};
+
+export {Contact};
